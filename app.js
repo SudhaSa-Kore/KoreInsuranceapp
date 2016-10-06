@@ -47,7 +47,7 @@ app.get('/getTaxCertificate',function(req,res){
 app.get('/policyDetails/:id',function(req,res){
 	res.writeHead(200,{'Content-Type':'application/json'});
 	if(req.params.id == '9348209'){
-		res.end(JSON.stringify({"policyNumber":"9348209","policyStartDate":"19/10/2016","policyType":"monthly","policyName":"Simplified Issue Term Life Insurance","premiumAmount":"$4.75","policyEndDate":"27/5/2019","premiumPaymentDate":"19/07/2017","coverageAmount":"$10,000","beneficirayName":"John","termLength":"10 Years"}));
+		res.end(JSON.stringify({"policyNumber":"9348209","policyStartDate":"19/10/2016","policyType":"monthly","policyName":"Simplified Issue Term Life Insurance","premiumAmount":"$4.75","policyEndDate":"27/5/2019","premiumPaymentDate":"19/07/2016","coverageAmount":"$10,000","beneficirayName":"John","termLength":"10 Years"}));
 	}
 	else if(req.params.id == '1987650'){
 		res.end(JSON.stringify({"policyNumber":"1987650","policyStartDate":"02/07/2007","termLength":"15years","policyType":"monthly","policyName":"Term Life Insurance","premiumAmount":"$35.99","policyEndDate":"02/07/2022","premiumPaymentDate":"02/10/2016","coverageAmount":"$1,000,000","beneficirayName":"David"}));
