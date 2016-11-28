@@ -57,6 +57,12 @@ app.get('/policyDetails/:id',function(req,res){
 	}
 });
 
+app.get('/cancelOrder',function(req,res){
+	res.writeHead(200,{'Content-Type':'application/json'});
+	res.end(JSON.stringify({"msg":"Your order has been cacelled you will get a refund back"}));
+	
+});
+
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   var err = new Error('Not Found');
